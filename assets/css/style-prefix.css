@@ -15,6 +15,8 @@
   --cultured: hsl(0, 0%, 93%);
   --white: hsl(0, 100%, 100%);
   --onyx: hsl(0, 0%, 27%);
+  --red: hsl(0, 94%, 37%);
+  --verde: hsl(123, 100%, 20%);
 
   /**
    * typography
@@ -31,6 +33,7 @@
   --fs-9: 0.75rem;
   --fs-10: 0.688rem;
   --fs-11: 0.625rem;
+  --fs-12: 0.688rem;
 
   --weight-300: 300;
   --weight-400: 400;
@@ -965,7 +968,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .banner-btn {
-  background: var(--salmon-pink);
+  background: var(--verde);
   color: var(--white);
   width: -webkit-max-content;
   width: -moz-max-content;
@@ -1134,7 +1137,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .sidebar-title {
-  color: var(--onyx);
+  color: var(--red);
   font-size: var(--fs-5);
   text-transform: uppercase;
   letter-spacing: 0.8px;
@@ -1319,11 +1322,11 @@ body::-webkit-scrollbar-thumb:hover {
 
 .sidebar .price-box del {
   color: var(--sonic-silver);
-  font-size: 13px;
+  font-size: 12px;
 }
 
 .sidebar .price-box .price {
-  font-size: var(--fs-7);
+  font-size: var(--fs-12);
   font-weight: var(--weight-600);
   color: var(--davys-gray);
 }
@@ -1440,7 +1443,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .product-minimal .price-box del {
-  font-size: var(--fs-9);
+  font-size: var(--fs-12);
   color: var(--sonic-silver);
 }
 
@@ -1776,7 +1779,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 .product-grid .btn-action {
   background: var(--white);
-  color: var(--sonic-silver);
+  color: var(--red);
   margin-bottom: 5px;
   border: 1px solid var(--cultured);
   padding: 5px;
@@ -3298,8 +3301,11 @@ footer {
     padding: 5px 10px;
   }
 
-   .product-grid { -ms-grid-columns: (1fr)3; grid-template-columns:3 repeat(3, 1fr); }
- 
+  .product-grid {
+    -ms-grid-columns: (1fr)3;
+    grid-template-columns: 3 repeat(3, 1fr);
+  }
+
 
 
   /**
